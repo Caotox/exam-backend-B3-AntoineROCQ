@@ -4,4 +4,11 @@
 
 return [
     '_preview_error' => [['code', '_format'], ['_controller' => 'error_controller::preview', '_format' => 'html'], ['code' => '\\d+'], [['variable', '.', '[^/]++', '_format', true], ['variable', '/', '\\d+', 'code', true], ['text', '/_error']], [], [], []],
+    'ecurie_update_pilotes' => [['id'], ['_controller' => 'App\\Controller\\EcurieController::updatePilotes'], [], [['text', '/pilotes'], ['variable', '/', '[^/]++', 'id', true], ['text', '/api/ecuries']], [], [], []],
+    'infraction_list' => [[], ['_controller' => 'App\\Controller\\InfractionController::list'], [], [['text', '/api/infractions']], [], [], []],
+    'infraction_create' => [[], ['_controller' => 'App\\Controller\\InfractionController::create'], [], [['text', '/api/infractions']], [], [], []],
+    'api_login' => [[], [], [], [['text', '/api/login']], [], [], []],
+    'App\Controller\EcurieController::updatePilotes' => [['id'], ['_controller' => 'App\\Controller\\EcurieController::updatePilotes'], [], [['text', '/pilotes'], ['variable', '/', '[^/]++', 'id', true], ['text', '/api/ecuries']], [], [], []],
+    'App\Controller\InfractionController::list' => [[], ['_controller' => 'App\\Controller\\InfractionController::list'], [], [['text', '/api/infractions']], [], [], []],
+    'App\Controller\InfractionController::create' => [[], ['_controller' => 'App\\Controller\\InfractionController::create'], [], [['text', '/api/infractions']], [], [], []],
 ];
